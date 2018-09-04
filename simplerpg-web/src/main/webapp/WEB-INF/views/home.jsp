@@ -8,7 +8,9 @@
 <h1>
 	Hello world!  
 </h1>
-
 <P>  The time on the server is ${serverTime}. </P>
+<c:forEach var="names" items="${names}">
+	${names}<br>
+</c:forEach>
 </body>
 </html>
