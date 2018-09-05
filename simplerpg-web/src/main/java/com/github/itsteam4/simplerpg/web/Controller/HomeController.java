@@ -1,8 +1,6 @@
 package com.github.itsteam4.simplerpg.web.Controller;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Locale;
 
 import org.apache.ibatis.session.SqlSession;
