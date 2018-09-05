@@ -15,8 +15,8 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarResponsive" style="position: absolute;right:20px">
+          <ul class="navbar-nav ml-auto" >
             <li class="nav-item">
               <a class="nav-link" href="about.html">소식</a>
             </li>
@@ -59,9 +59,12 @@
                 <a class="dropdown-item" href="pricing.html">Pricing Table</a>
               </div>
             </li>
+            <li class="nav-item dropdown">
+            	<button type="button" class="btn btn-primary">로그인</button>
+            </li>
           </ul>
+          </div>
         </div>
-      </div>
     </nav>
 </body>
 </html>
