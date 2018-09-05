@@ -15,6 +15,7 @@
     <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="resources/css/modern-business.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 	    <!-- Navigation -->
@@ -33,5 +34,6 @@
  <!-- Bootstrap core JavaScript -->
     <script src="resources/vendor/jquery/jquery.min.js"></script>
     <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/login/login.js"></script>
 </body>
 </html>

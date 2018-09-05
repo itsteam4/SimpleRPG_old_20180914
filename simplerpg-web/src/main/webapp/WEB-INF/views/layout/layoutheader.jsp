@@ -8,6 +8,7 @@
   
 </head>
 <body>
+	<form>
 	  <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -60,11 +61,12 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-            	<button type="button" class="btn btn-primary">로그인</button>
+            	<button type="button" id="loginbutton" class="btn btn-primary">로그인</button>
             </li>
           </ul>
           </div>
         </div>
     </nav>
+    </form>
 </body>
 </html>
