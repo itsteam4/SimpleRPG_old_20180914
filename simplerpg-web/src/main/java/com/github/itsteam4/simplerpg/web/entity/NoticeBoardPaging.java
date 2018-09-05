@@ -3,7 +3,6 @@ package com.github.itsteam4.simplerpg.web.entity;
 import org.springframework.stereotype.Component;
 
 @Component
-@Data
 public class NoticeBoardPaging {
 	private String find;
 	private int startrow;
