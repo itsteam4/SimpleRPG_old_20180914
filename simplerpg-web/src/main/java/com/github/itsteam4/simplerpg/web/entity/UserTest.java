@@ -8,6 +8,7 @@ public class UserTest {
 
 	public String getName() {
 		return name;
+		//test
 	}
 
 	public void setName(String name) {
