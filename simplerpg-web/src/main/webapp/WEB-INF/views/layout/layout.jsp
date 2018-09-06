@@ -35,5 +35,9 @@
     <script src="resources/vendor/jquery/jquery.min.js"></script>
     <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="resources/login/login.js"></script>
+    <script src="resources/member/post.js"></script>
+	<script src="resources/member/member.js"></script>
+<!-- Daum API -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>    
 </body>
 </html>
