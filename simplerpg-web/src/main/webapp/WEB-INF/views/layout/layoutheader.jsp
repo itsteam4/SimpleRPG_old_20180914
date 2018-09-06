@@ -33,8 +33,15 @@
               </div>
             </li>
             
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">랭킹</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                		랭킹
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="dbinserform">DB값 입력</a>
+                <a class="dropdown-item" href="rankform">게임 순위</a>
+                <a class="dropdown-item" href="rankinfoform">랭킹 정보</a>
+              </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
