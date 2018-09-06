@@ -1,8 +1,6 @@
 package com.github.itsteam4.simplerpg.web.Controller;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Locale;
 
 import org.apache.ibatis.session.SqlSession;
@@ -38,7 +36,13 @@ public class HomeController {
 		ArrayList<String> name = dao.selectAll();
 		
 		model.addAttribute("names",name);
-		return "home";
+		return "redirect:IndexForm";
 	}
+	@RequestMapping(value="IndexForm",method=RequestMethod.GET)
+	public String LogoPage() {
+		
+		return "/home";
+	}
+	
 	
 }

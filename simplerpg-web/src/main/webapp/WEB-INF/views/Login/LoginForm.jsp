@@ -1,17 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-		body{
-				background-image: url('resources/images/jungles.jpg');
-		}
+	body {
+		 background-image: url('resources/image/jungles.jpg');
+	}
 </style>
 </head>
-<body>
+<body style="background-image: url('resources/image/jungles.jpg');">
 	<form>
 		<div class="container">
 			<div class="row" style="margin-top:100px">
@@ -53,12 +53,12 @@
 		 	<div class="col-md-2"></div>
 		 	<div class="col-md-8" style="text-align:center">
 		 	    <span class="col-md-3 text-left">
-		 	    	<a href="memberInsertForm">
-		 	    	<i class="fa fa-plus-square" aria-hidden="true"></i> È¸¿ø°¡ÀÔ
+		 	    	<a href="MemberInsertForm">
+		 	    	<i class="fa fa-plus-square" aria-hidden="true"></i> íšŒì›ê°€ì…
 		 	    	</a></span>
 	 			<span  id="passfind" class="col-md-6 text-center">
 		 	    	<i class="fa fa-search" aria-hidden="true"></i> 
-		 	    	 ºñ¹Ğ¹øÈ£Ã£±â 
+		 	    	 ë¹„ë°€ë²ˆí˜¸ì°¾ê¸° 
 	 			</span>
 		 	</div>
 		</div>			
