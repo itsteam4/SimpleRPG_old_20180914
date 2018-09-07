@@ -348,7 +348,7 @@
                             ">사색인장</span>
                         </li>
                         <li class="pull-left" style="width:357px; height:36px; border-top:1px solid #fff; border-bottom:1px solid #fff; 
-	         			font-size:14px;  margin-left:20px;">
+	         			font-size:14px;  margin-left:20px; border-collapse: collapse;">
                             <em class="pull-left" style="width:160px; height:34px;
                             background:url('resources/image/rank/ico_chr_item.png')no-repeat;
                             background-position:0 7px;
@@ -370,7 +370,7 @@
                             ">사색인장</span>
                         </li>
                         <li class="pull-left" style="width:357px; height:36px; border-top:1px solid #fff; border-bottom:1px solid #fff; 
-	         			font-size:14px;  margin-left:20px;">
+	         			font-size:14px;  margin-left:20px; border-collapse: collapse;">
                             <em class="pull-left" style="width:160px; height:34px;
                             background:url('resources/image/rank/ico_chr_item.png')no-repeat;
                             background-position:0 7px;
