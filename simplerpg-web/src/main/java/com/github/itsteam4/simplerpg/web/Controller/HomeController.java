@@ -28,7 +28,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "IndexForm", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
@@ -36,12 +36,12 @@ public class HomeController {
 		ArrayList<String> name = dao.selectAll();
 		
 		model.addAttribute("names",name);
-		return "redirect:IndexForm";
+		return "home";
 	}
-	@RequestMapping(value="IndexForm",method=RequestMethod.GET)
+	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String LogoPage() {
 		
-		return "/home";
+		return "redirect:IndexForm";
 	}
 	
 	

@@ -19,20 +19,35 @@
 					<div class="input-group-prepend">
 						<span class="input-group-text" style="width: 100px"><i class="fa fa-id-card-o" aria-hidden="true">아이디</i></span>
 					</div>
-					<input type="text" class="form-control" id="id" name="id" value="">
+					<input type="text" class="form-control" id="id" name="id" value=""
+					 required="true" data-parsley-error-message="아이디를 입력하세요."
+       				data-parsley-errors-container="div[id='idError']">
 					<button type="button" id="userconfirm" class="btn btn-primary" name="confirm">중복확인</button> 
 					<input type="hidden" id="confirmcheck" value="no">
 				</div>
 			</div>
-			
+			<div class="row" style="margin-top: 20px"> 
+		    	<div class="col-md-12">
+		     		<div id="idError"  style="color:#f00">
+		     		</div> 
+		    	</div>
+		  	</div>
 			<div class="row" style="margin-top: 50px">
 				<div class="input-group col-md-12">
 					<div class="input-group-prepend">
 						<span class="input-group-text" style="width: 100px"><i class="fa fa-id-card-o" aria-hidden="true">패스워드</i></span>
 					</div>
-					<input type="password" class="form-control" id="pw" name="pw" value="">
+					<input type="password" class="form-control" id="pw" name="pw" value=""
+						required="true" data-parsley-error-message="비밀번호를 입력하세요!"
+						data-parsley-errors-container="div[id='passwordError']">
 				</div>
 			</div>
+			<div class="row" style="margin-top: 20px"> 
+		    	<div class="col-md-12">
+		     		<div id="passwordError" style="color:#f00">
+		     		</div> 
+		    	</div>
+		  	</div>
 			
 			<div class="row" style="margin-top: 50px">
 				<div class="input-group col-md-12">
@@ -84,7 +99,7 @@
 			
 			<div class="row" style="margin-top: 50px">
 				<div class="input-group col-md-12">
-					<button type="submit" id="memberInsert" class="btn btn-primary" name="memberInsertUp" style="width:50%">등록</button>
+					<button type="button" id="memberInsert" class="btn btn-primary" name="memberInsertUp" style="width:50%">등록</button>
 					<button type="button" id="memberCancel" class="btn btn-warning" name="cancel" style="width:50%">취소</button>
 				</div>
 			</div>

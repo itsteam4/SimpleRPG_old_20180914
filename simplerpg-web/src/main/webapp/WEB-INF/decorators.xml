@@ -16,10 +16,7 @@
  <excludes>
 <!--   <pattern>/memberList</pattern> -->    
   <pattern>/test</pattern>   
-
-                                             
 <!--   <pattern>/gallery</pattern> -->
-  
  </excludes>
 
 </decorators>

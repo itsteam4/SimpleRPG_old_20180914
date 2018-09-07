@@ -1,3 +1,4 @@
+// Id Check
 $(document).ready(function(){
 	$('#userconfirm').on('click',function(){
 		var id = $('#id').val();
@@ -31,4 +32,19 @@ $(document).ready(function(){
 			});
 		}
 	});
+	
+	
+	$('#memberInsert').on('click',function(){
+		if($('#id').val() == ""){
+			alert("아이디를 입력해주세요.");
+			return;
+		}
+		if($('#confirmcheck').val() == 'no'){
+			alert("중복검사를 해주세요.");
+			return;
+		}else{
+			$('.member_insert_form').submit();
+		}
+	});
+	
 })

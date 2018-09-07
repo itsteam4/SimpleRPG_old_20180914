@@ -8,12 +8,12 @@
 
 </head>
 <body>
-	<form action="login" id="login_form" method="post">
+	<form action="login" id="loginfail_form" method="post">
 		<div class="container">
 			<div class="row" style="margin-top:100px">
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
-					<h1 style="size:50px">Login</h1>
+					<h1 style="size:50px">Login Fail</h1>
 				</div>
 				<div class="col-md-2"></div>
 			</div>
@@ -23,7 +23,7 @@
 					<span class="input-group-addon" style="text-align:center">
 						<h1><i class="fa fa-user-circle-o" aria-hidden="true">ID:</i></h1>
 					</span>
-					<input name="id" id="id" class="form-control" type="text" size="40"
+					<input name="userid" id="userid" class="form-control" type="text" size="40"
 							maxlength="30"/>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
 					<span class="input-group-addon" style="text-align:center;">
 						<h1><i class="fa fa-key" aria-hidden="true">PW:</i></h1>
 					</span>
-					<input type="password" name="pw" id="pw" class="form-control" type="text" size="40"
+					<input name="userid" id="userid" class="form-control" type="text" size="40"
 							maxlength="30"/>		
 				</div>
 			</div>
