@@ -16,16 +16,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- 수정 요망 -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#"
-						id="navbarDropdownPortfolio" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="boardpagelist"> 소식 </a>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"	aria-haspopup="true" aria-expanded="boardpagelist">소식</a>
 						<div class="dropdown-menu dropdown-menu-right"
 							aria-labelledby="navbarDropdownPortfolio">
 							<a class="dropdown-item" href=noticeboardpagelist>공지사항</a> <a
 								class="dropdown-item" href="updateboardpagelist">업데이트 노트</a> <a
-								class="dropdown-item" href="event">이벤트</a>
+								class="dropdown-item" href="eventboardpagelist">이벤트</a>
 
 						</div></li>
             <li class="nav-item">
@@ -72,4 +70,4 @@
       </div>
     </nav>
 </body>
-</html>
+</html>	

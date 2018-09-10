@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- <mapper namespace="com.naver.psgkhs.service.BoardDao">
-  <resultMap type="com.naver.psgkhs.entities.Board" id="boardMap">
+ <mapper namespace="com.github.itsteam4.simplerpg.web.service.BoardDao">
+  <resultMap type="com.github.itsteam4.simplerpg.web.entity.Board" id="boardMap">
   </resultMap>
   <insert id="insertRow" parameterType="hashMap">
   	insert into board(b_seq, b_email, b_name, b_title, b_content, b_ip, b_ref, b_step, b_hit, b_level, b_attach, b_date

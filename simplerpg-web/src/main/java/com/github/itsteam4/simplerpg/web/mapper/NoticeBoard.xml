@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- <mapper namespace="com.naver.psgkhs.service.NoticeBoardDao">
-  <resultMap type="com.naver.psgkhs.entities.NoticeBoard" id="noticeboardMap">
+ <mapper namespace="com.github.itsteam4.simplerpg.web.service.NoticeBoardDao">
+  <resultMap type="com.github.itsteam4.simplerpg.web.entity.NoticeBoard" id="noticeboardMap">
   </resultMap>
   <insert id="insertRow" parameterType="hashMap">
   	insert into noticeboard(n_seq, n_id, n_type, n_title, n_content, n_ip, n_ref, n_step, n_hit, n_date
