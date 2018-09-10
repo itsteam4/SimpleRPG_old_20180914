@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
-  
+<link href="resources/css/main-slide.css" rel="stylesheet">
 </head>
 <body>
 	<form>
@@ -83,6 +83,36 @@
           </div>
         </div>
     </nav>
+    <!-- SLIDE SECTION START -->
+    <div class="slideshow-container" style="margin-bottom:50px;">
+    		<div class="mySlides fade">
+			  <img src="resources/image/mainpage/slide1.jpg" style="width:100%;">
+			</div>
+			<div class="mySlides fade">
+			  <img src="resources/image/mainpage/slide2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+			  <img src="resources/image/mainpage/slide3.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+			  <img src="resources/image/mainpage/slide4.jpg" style="width:100%">
+			</div>
+			<div >
+				<a href="#" style="width:289px; height:152px;">
+					<img class="" src="resources/image/mainpage/start_btn.jpg" 
+			  		style="width:289px; height:152px; position:absolute; top:130px; left:1150px; 
+			  		overflow:hidden;">
+				</a>
+			</div>
+			<div style="text-align:center; color:#5F00FF; ">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+	</div>
+	<script src="resources/js/mainslide.js"></script>
+	<!-- SLIDE SECTION END -->
     </form>
 </body>
 </html>
