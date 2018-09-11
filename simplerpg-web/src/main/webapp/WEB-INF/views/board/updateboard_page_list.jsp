@@ -6,11 +6,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>공지사항</title>
-<%-- <content tag="local_script"> --%>
-<!--    <script type="text/javascript"> -->
-<!--          alert(100);  -->
-<!-- </script>  -->
-<%-- </content> --%>
 </head>
 <body>
 	<form id="updateboard_list" name="updateboard_list"
@@ -77,19 +72,20 @@
 					<c:forEach var="noticeboards" items="${noticeboards}"
 						varStatus="status">
 						<tr>
-							<td><c:if test="${noticeboards.n_step == 0}">
-                        ${noticeboards.n_ref}
+							<td><c:if test="${noticeboards.u_step == 0}">
+                        ${noticeboards.u_ref}
                      </c:if></td>
-							<td>${noticeboards.n_type}</td>
-							<td>${noticeboards.n_id}</td>
-							<td><a href="boarddetail?n_seq=${noticeboards.n_seq}"
+							<hr>
+							<td>${noticeboards.u_type}</td>
+							<td>${noticeboards.u_id}</td>
+							<td><a href="boarddetail?u_seq=${noticeboards.u_seq}"
 								style="color: #292929"> <c:if
-										test="${noticeboards.n_step ge 1}">
+										test="${noticeboards.u_step ge 1}">
 										<i class="fab fa-replyd"></i>
-									</c:if> ${noticeboards.n_title}
+									</c:if> ${noticeboards.u_title}
 							</a></td>
-							<td>${noticeboards.n_date}</td>
-							<td style="text-align: center">${noticeboards.n_hit}</td>
+							<td>${noticeboards.u_date}</td>
+							<td style="text-align: center">${noticeboards.u_hit}</td>
 						</tr>
 					</c:forEach>
 				</tbody>

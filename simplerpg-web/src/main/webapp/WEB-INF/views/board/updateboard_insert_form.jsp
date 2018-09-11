@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,12 +14,11 @@
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script><script src="http://t1.daumcdn.net/postcode/api/core/180619/1529384927473/180619.js" type="text/javascript" charset="UTF-8"></script>
 <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 </head>
-<body onload="board_reply.n_content.focus()">
-	<form id="noticeboard_reply" name="noticeboard_reply" action="noticeboardreplyinsert" method="post" enctype="multipart/form-data">
-		<input type="hidden" name="n_ref" value="${board.n_ref}">
+<body>
+	<form id="noticeboard_form" name="noticeboard_form" action="noticeboardinsert" method="post" enctype="multipart/form-data">
 		<div class="container" style="text-align: center">
 			<div style="margin-top: 30px">
-				<h1>댓글</h1>
+				<h1>공지사항</h1>
 			</div>
 			<div class="row" style="margin-top: 30px">
 				<div class="col-md-3"></div>
@@ -29,7 +27,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-plus" style="font-size: 17px"> E-MAIL</i></span>
 					</div>
-					<input type="text" class="form-control" id="n_email" name="n_email" value="${sessionemail}" readonly>
+					<input type="text" class="form-control" id="u_email" name="u_email" value="${sessionemail}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -40,7 +38,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 이름</i></span>
 					</div>
-					<input type="text" id="n_name" name="n_name" class="form-control" value="${sessionname}" readonly>
+					<input type="text" id="u_name" name="u_name" class="form-control" value="${sessionname}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -51,7 +49,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 제목</i></span>
 					</div>
-					<input type="text" id="n_title" name="n_title" class="form-control" value="${board.n_title}" required="true">
+					<input type="text" id="u_title" name="u_title" class="form-control" required="true">
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -69,7 +67,7 @@
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<textarea id="n_content" name="n_content" class="form-control" rows="10" style="resize: none" required="true"></textarea>
+					<textarea id="u_content" name="u_content" class="form-control" rows="10" style="resize: none" required="true"></textarea>
 				</div>
 				<div class="col-md-3"></div>
 			</div>

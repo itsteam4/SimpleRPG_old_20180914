@@ -23,8 +23,8 @@
 <body>
 	<form id="noticeboard_detail" name="noticeboard_detail" action="noticeboardupdate" method="post" enctype="multipart/form-data">
 		<div class="container" style="text-align: center">
-			<input type="hidden" id="n_seq" name="n_seq" value="${board.n_seq}">
-			<input type="hidden" id="n_ref" name="n_ref" value="${board.n_ref}">
+			<input type="hidden" id="u_seq" name="u_seq" value="${board.u_seq}">
+			<input type="hidden" id="u_ref" name="u_ref" value="${board.u_ref}">
 			<div style="margin-top: 30px">
 				<h1>게시글</h1>
 			</div>
@@ -35,7 +35,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-plus" style="font-size: 17px"> E-MAIL</i></span>
 					</div>
-					<input type="text" class="form-control" id="n_email" name="n_email" value="${board.n_email}" readonly>
+					<input type="text" class="form-control" id="u_email" name="u_email" value="${board.u_email}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -46,7 +46,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 이름</i></span>
 					</div>
-					<input type="text" id="n_name" name="n_name" class="form-control" value="${board.n_name}" readonly>
+					<input type="text" id="u_name" name="u_name" class="form-control" value="${board.u_name}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -54,21 +54,21 @@
 				<div class="col-md-3"></div>
 				<div class="input-group mb-3 col-md-6 ">
 					<c:choose>
-						<c:when test="${sessionemail == board.n_email || sessionemail == 'a@a.a'}">
+						<c:when test="${sessionemail == board.u_email || sessionemail == 'a@a.a'}">
 							<div class="input-group-prepend">
 								<span class="input-group-text" style="width: 150px"><i
 									class="fas fa-user-lock" style="font-size: 17px"> 제목</i></span>
 							</div>
-							<input type="text" id="n_title" name="n_title"
-								value="${board.n_title}" class="form-control" required="true">
+							<input type="text" id="u_title" name="u_title"
+								value="${board.u_title}" class="form-control" required="true">
 						</c:when>
 						<c:otherwise>
 							<div class="input-group-prepend">
 								<span class="input-group-text" style="width: 150px"><i
 									class="fas fa-user-lock" style="font-size: 17px"> 제목</i></span>
 							</div>
-							<input type="text" id="n_title" name="n_title"
-								value="${board.n_title}" class="form-control" style="background-color: #fff" required="true" readonly>
+							<input type="text" id="u_title" name="u_title"
+								value="${board.u_title}" class="form-control" style="background-color: #fff" required="true" readonly>
 						</c:otherwise>
 					</c:choose>
 				</div>
@@ -82,14 +82,14 @@
 							class="fas fa-user-lock" style="font-size: 17px"> 첨부파일</i></span>
 					</div>
 					<input type="file" id="file" name="file" class="form-control">
-					<input type="text" name="n_beforeattach" class="form-control" value="${board.n_attach}">
+					<input type="text" name="u_beforeattach" class="form-control" value="${board.u_attach}">
 				</div>
 				<div class="col-md-3"></div>
 			</div>
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<textarea id="n_content" name="n_content" class="form-control" rows="10" style="background-color: #fff; resize: none" required="true" readonly>${board.n_content}</textarea>
+					<textarea id="u_content" name="u_content" class="form-control" rows="10" style="background-color: #fff; resize: none" required="true" readonly>${board.u_content}</textarea>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -100,7 +100,7 @@
 				</div>
 				<div class="col-md-2">
 					<c:choose>
-						<c:when test="${sessionemail == board.n_email || sessionemail == 'a@a.a'}">
+						<c:when test="${sessionemail == board.u_email || sessionemail == 'a@a.a'}">
 							<button id="modify" class="btn btn-success btn-block">수정</button>
 						</c:when>
 						<c:otherwise>
@@ -109,7 +109,7 @@
 				</div>
 				<div class="col-md-2">
 					<c:choose>
-						<c:when test="${sessionemail == board.n_email || sessionemail == 'a@a.a'}">
+						<c:when test="${sessionemail == board.u_email || sessionemail == 'a@a.a'}">
 							<button type="button" id="boarddelete" class="btn btn-danger btn-block">삭제</button>
 						</c:when>
 						<c:otherwise>
@@ -118,7 +118,7 @@
 				</div>
 				<div class="col-md-1">
 					<c:if test="${sessionemail != null}">
-						<button type="button" id="reply" onclick="location.href='boardreplyform?n_title=${board.n_title}&n_ref=${board.n_ref}'" class="btn btn-warning btn-block">댓글</button>
+						<button type="button" id="reply" onclick="location.href='boardreplyform?u_title=${board.u_title}&u_ref=${board.u_ref}'" class="btn btn-warning btn-block">댓글</button>
 					</c:if>
 				</div>
 				<div class="col-md-2"></div>
