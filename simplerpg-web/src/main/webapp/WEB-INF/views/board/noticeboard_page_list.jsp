@@ -13,7 +13,7 @@
 <%-- </content> --%>
 </head>
 <body>
-	<form id="board_list" name="board_list" action="boardpagelist"
+	<form id="noticeboard_list" name="noticeboard_list" action="noticeboardpagelist"
 		method="get">
 		<div class="container">
 			<div class="row" style="margin-top: 30px">
@@ -69,29 +69,30 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3"></div>
-				<div class="col-md-6">
-					<div class="col-md-6">
-						<select class="form-control" name="dependent20"
-							style="text-align: center">
-							<option value="공지">공지</option>
-							<option value="긴급공지">긴급공지</option>
-						</select> <input type="text" id="search" name="find"
-							style="text-align: center">
-						<button type="submit" class="btn btn-primary">
-							<i class="fas fa-search"></i>
-						</button>
-						<c:choose>
-							<c:when test="${sessionid == null}">
-							</c:when>
-							<c:otherwise>
-								<a href="boardinsertform"><button type="button" id="write"
-										class="btn btn-success">글쓰기</button></a>
-							</c:otherwise>
-						</c:choose>
-					</div>
-					<div class="col-md-3"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-2">
+					<select class="form-control" name="dependent20"
+						style="text-align: center">
+						<option value="공지">공지</option>
+						<option value="긴급공지">긴급공지</option>
+					</select>
 				</div>
+				<div class="col-md-3">
+					<input type="text" id="search" name="find"
+						placeholder="특수문자는 사용할수 없습니다." value='' style="text-align: center">
+					<button type="submit" class="btn btn-primary">
+						<i class="fas fa-search"></i>
+					</button>
+					<c:choose>
+						<c:when test="${sessionid == null}">
+						</c:when>
+						<c:otherwise>
+							<a href="boardinsertform"><button type="button" id="write"
+									class="btn btn-success">글쓰기</button></a>
+						</c:otherwise>
+					</c:choose>
+				</div>
+				<div class="col-md-3"></div>
 			</div>
 		</div>
 	</form>
