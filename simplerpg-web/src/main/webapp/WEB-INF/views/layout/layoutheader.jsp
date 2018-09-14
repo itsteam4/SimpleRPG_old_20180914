@@ -20,18 +20,9 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">소식</a>
             </li>
-            
-           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                		개임소개
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="gameguideform">게임배경 소개</a>
-                <a class="dropdown-item" href="itemguideform">아이템 소개</a>
-                <a class="dropdown-item" href="monsterguideform">몬스터 소개</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">게임 소개</a>
             </li>
-            
             <li class="nav-item">
               <a class="nav-link" href="contact.html">랭킹</a>
             </li>
@@ -52,7 +43,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                 <a class="dropdown-item" href="blog-home-1.html">자주묻는질문</a>
-                <a class="dropdown-item" href="helpdeskInsertForm">1:1문의</a>
+                <a class="dropdown-item" href="blog-home-2.html">1:1문의</a>
                 <a class="dropdown-item" href="blog-post.html">보안 센터</a>
               </div>
             </li>
