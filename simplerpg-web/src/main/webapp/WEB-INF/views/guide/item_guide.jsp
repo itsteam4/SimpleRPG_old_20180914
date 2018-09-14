@@ -20,7 +20,7 @@
 
       <ol class="breadcrumb" style="margin-top: 50px">
         <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
+          <a href="#">Home</a>
         </li>
         <li class="breadcrumb-item active">게임소개</li>
         <li class="breadcrumb-item active">아이템 소개</li>
@@ -135,6 +135,7 @@
           <a class="page-link" href="#">맨위로 가기</a>
         </li>
       </ul>
+      </div>
     <!-- /.container -->
    </form>
 

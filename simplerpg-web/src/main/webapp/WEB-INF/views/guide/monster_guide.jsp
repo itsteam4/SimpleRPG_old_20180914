@@ -19,7 +19,7 @@
 
       <ol class="breadcrumb" style="margin-top: 50px">
         <li class="breadcrumb-item">
-          <a href="home">Home</a>
+          <a href="#">Home</a>
         </li>
          <li class="breadcrumb-item active">게임소개</li>
         <li class="breadcrumb-item active">몬스터 소개</li>
