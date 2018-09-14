@@ -11,6 +11,7 @@
 <!--          alert(100);  -->
 <!-- </script>  -->
 <%-- </content> --%>
+4234234234
 </head>
 <body>
 	<form id="noticeboard_list" name="noticeboard_list" action="noticeboardpagelist"
