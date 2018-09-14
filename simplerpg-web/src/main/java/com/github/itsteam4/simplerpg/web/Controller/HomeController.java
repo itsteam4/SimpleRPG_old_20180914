@@ -1,8 +1,6 @@
 package com.github.itsteam4.simplerpg.web.Controller;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Locale;
 
 import org.apache.ibatis.session.SqlSession;
@@ -30,7 +28,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "IndexForm", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
@@ -40,5 +38,11 @@ public class HomeController {
 		model.addAttribute("names",name);
 		return "home";
 	}
+	@RequestMapping(value="/",method=RequestMethod.GET)
+	public String LogoPage() {
+		
+		return "redirect:IndexForm";
+	}
+	
 	
 }

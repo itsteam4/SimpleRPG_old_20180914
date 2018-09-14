@@ -30,7 +30,7 @@
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 	    <beans:property name="dataSource" ref="dataSource"></beans:property>
 	    <beans:property name="mapperLocations"
-	     value="classpath:com/github/itsteam4/simplerpg/web/mapper/*.xml"></beans:property>
+	     value="classpath:com/github/itsteam4/simplerpg/web/**/*.xml"></beans:property>
     </beans:bean>
     
     <beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
