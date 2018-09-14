@@ -27,6 +27,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-plus" style="font-size: 17px"> E-MAIL</i></span>
 					</div>
+
 					<input type="text" class="form-control" id="n_email" name="n_email" value="${sessionemail}" readonly>
 				</div>
 				<div class="col-md-3"></div>
@@ -49,6 +50,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 제목</i></span>
 					</div>
+
 					<input type="text" id="n_title" name="n_title" class="form-control" required="true">
 				</div>
 				<div class="col-md-3"></div>

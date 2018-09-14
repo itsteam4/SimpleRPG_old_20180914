@@ -370,7 +370,6 @@ public class BoardController {
 
 		return "board/updateboard_page_list";
 	}
-
 	@RequestMapping(value = "/eventboardpagelist", method = RequestMethod.GET)
 	public String eventboardpagelist(Model model, String find) {
 		if (find == null) {
@@ -397,6 +396,7 @@ public class BoardController {
 		}
 		model.addAttribute("noticeboards", noticeboards);
 		model.addAttribute("pages", pages);
+
 
 		return "board/eventboard_page_list";
 	}
