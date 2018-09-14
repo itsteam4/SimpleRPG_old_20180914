@@ -49,7 +49,6 @@ public class BoardController {
 
 	@RequestMapping(value = "/gameboardinsertform", method = RequestMethod.GET)
 	public String gameboardInsertForm(HttpSession session) {
-
 		return "board/gameboard_insert_form";
 	}
 
@@ -341,35 +340,6 @@ public class BoardController {
 		return "board/noticeboard_page_list";
 	}
 
-	@RequestMapping(value = "/updateboardpagelist", method = RequestMethod.GET)
-	public String updateboardpagelist(Model model, String find) {
-		if (find == null) {
-			find = "";
-		}
-		this.find = find;
-		int pagesize = 10;
-		int startrow = 0;
-		int endrow = startrow + pagesize;
-		NoticeBoardDao dao = sqlSession.getMapper(NoticeBoardDao.class);
-		noticeboardpaging.setFind(find);
-		noticeboardpaging.setStartrow(startrow);
-		noticeboardpaging.setEndrow(endrow);
-		ArrayList<NoticeBoard> noticeboards = dao.pageList(noticeboardpaging);
-		int rowcount = dao.selectRowCount(find);
-		int abspage = 1;
-		if (rowcount % pagesize == 0) {
-			abspage = 0;
-		}
-		int pagecount = rowcount / pagesize + abspage;
-		int[] pages = new int[pagecount];
-		for (int i = 0; i < pagecount; i++) {
-			pages[i] = i + 1;
-		}
-		model.addAttribute("noticeboards", noticeboards);
-		model.addAttribute("pages", pages);
-
-		return "board/updateboard_page_list";
-	}
 	@RequestMapping(value = "/eventboardpagelist", method = RequestMethod.GET)
 	public String eventboardpagelist(Model model, String find) {
 		if (find == null) {
@@ -397,8 +367,7 @@ public class BoardController {
 		model.addAttribute("noticeboards", noticeboards);
 		model.addAttribute("pages", pages);
 
-
-		return "board/eventboard_page_list";
+		return "board/noticeboard_page_list";
 	}
 
 }

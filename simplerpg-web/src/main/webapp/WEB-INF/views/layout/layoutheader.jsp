@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +8,10 @@
   
 </head>
 <body>
-   <form>
-     <!-- Navigation -->
+	  <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="IndexForm">Simple RPG</a>
+        <a class="navbar-brand" href="index.html">Simple RPG</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,20 +38,13 @@
                 <a class="dropdown-item" href="monsterguideform">몬스터 소개</a>
               </div>
             </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      랭킹
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="dbinserform">DB값 입력</a>
-                <a class="dropdown-item" href="rankform">게임 순위</a>
-                <a class="dropdown-item" href="rankinfoform">랭킹 정보</a>
-              </div>
+       
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">랭킹</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Ŀ�´�Ƽ
+                	커뮤니티
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="portfolio-1-col.html">스크린샷</a>
@@ -83,13 +75,9 @@
                 <a class="dropdown-item" href="pricing.html">Pricing Table</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-               <button type="button" id="loginbutton" class="btn btn-primary">�α���</button>
-            </li>
           </ul>
-          </div>
         </div>
+      </div>
     </nav>
-    </form>
 </body>
 </html>	
