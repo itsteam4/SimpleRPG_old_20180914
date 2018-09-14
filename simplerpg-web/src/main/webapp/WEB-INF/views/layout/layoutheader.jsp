@@ -16,44 +16,51 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- Л┬≤Л═∙ Л ■К╖² -->
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"	aria-haspopup="true" aria-expanded="boardpagelist">Л├▄Л▀²</a>
+						<div class="dropdown-menu dropdown-menu-right"
+							aria-labelledby="navbarDropdownPortfolio">
+							<a class="dropdown-item" href=noticeboardpagelist>ЙЁ╣Л╖─Л┌╛М∙╜</a> <a
+								class="dropdown-item" href="updateboardpagelist">Л≈┘К█╟Л²╢М┼╦ К┘╦М┼╦</a> <a
+								class="dropdown-item" href="eventboardpagelist">Л²╢К╡╓М┼╦</a>
+						</div></li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">╪р╫д</a>
+              <a class="nav-link" href="about.html">Л├▄Л▀²</a>
             </li>
-            
            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                		╟Ёюс╪р╟Ё
+                		Й╟°Л·└Л├▄Й╟°
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="gameguideform">╟тюс╧Х╟Ф ╪р╟Ё</a>
-                <a class="dropdown-item" href="itemguideform">╬фюлеш ╪р╟Ё</a>
-                <a class="dropdown-item" href="monsterguideform">╦С╫╨ем ╪р╟Ё</a>
+                <a class="dropdown-item" href="gameguideform">Й╡▄Л·└К╟╟Й╡╫ Л├▄Й╟°</a>
+                <a class="dropdown-item" href="itemguideform">Л∙└Л²╢М┘° Л├▄Й╟°</a>
+                <a class="dropdown-item" href="monsterguideform">К╙╛Л┼╓М└╟ Л├▄Й╟°</a>
               </div>
             </li>
-            
+       
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">╥╘е╥</a>
+              <a class="nav-link" href="contact.html">К·╜М┌╧</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                	д©╧б╢оф╪
+                	Л╩╓К╝╓К▀┬М▀╟
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">╫╨е╘╦╟╪╕</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">╣©©╣╩С</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">юзю╞╟т╫цфг</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">фа/ЁКго©Л</a>
+                <a class="dropdown-item" href="portfolio-1-col.html">Л┼╓М│╛К╕╟Л┐╥</a>
+                <a class="dropdown-item" href="portfolio-2-col.html">К▐≥Л≤│Л┐│</a>
+                <a class="dropdown-item" href="portfolio-3-col.html">Л·░Л°═Й╡▄Л▀°М▄░</a>
+                <a class="dropdown-item" href="portfolio-4-col.html">М▄│/К┘╦М∙≤Л ╟</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                		╟М╟╢╪╬ем
+                		ЙЁ═Й╟²Л└╪М└╟
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">юзаж╧╞╢баЗ╧╝</a>
-                <a class="dropdown-item" href="helpdeskInsertForm">1:1╧╝юг</a>
-                <a class="dropdown-item" href="blog-post.html">╨╦╬х ╪╬ем</a>
+                <a class="dropdown-item" href="blog-home-1.html">Л·░Лё╪К╛╩К┼■Л╖┬К╛╦</a>
+                <a class="dropdown-item" href="helpdeskInsertForm">1:1К╛╦Л²≤</a>
+                <a class="dropdown-item" href="blog-post.html">КЁ╢Л∙┬ Л└╪М└╟</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -73,4 +80,4 @@
       </div>
     </nav>
 </body>
-</html>
+</html>	
