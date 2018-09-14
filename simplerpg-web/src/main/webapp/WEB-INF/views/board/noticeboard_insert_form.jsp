@@ -27,7 +27,8 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-plus" style="font-size: 17px"> E-MAIL</i></span>
 					</div>
-					<input type="text" class="form-control" id="b_email" name="b_email" value="${sessionemail}" readonly>
+
+					<input type="text" class="form-control" id="n_email" name="n_email" value="${sessionemail}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -38,7 +39,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 이름</i></span>
 					</div>
-					<input type="text" id="b_name" name="b_name" class="form-control" value="${sessionname}" readonly>
+					<input type="text" id="n_name" name="n_name" class="form-control" value="${sessionname}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -49,7 +50,8 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 제목</i></span>
 					</div>
-					<input type="text" id="b_title" name="b_title" class="form-control" required="true">
+
+					<input type="text" id="n_title" name="n_title" class="form-control" required="true">
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -67,7 +69,7 @@
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<textarea id="b_content" name="b_content" class="form-control" rows="10" style="resize: none" required="true"></textarea>
+					<textarea id="n_content" name="n_content" class="form-control" rows="10" style="resize: none" required="true"></textarea>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
