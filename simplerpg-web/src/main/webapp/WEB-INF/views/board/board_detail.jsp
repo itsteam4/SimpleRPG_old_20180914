@@ -133,7 +133,7 @@
 								<h4 class="modal-title"></h4>
 							</div>
 							<div class="boarddelete-modal-body">
-								<p>Some text in the modal.</p>
+								<p>Some text in the modal......</p>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-success boarddelete_modal_btn1"

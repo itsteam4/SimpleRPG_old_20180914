@@ -49,6 +49,7 @@ public class BoardController {
 
 	@RequestMapping(value = "/gameboardinsertform", method = RequestMethod.GET)
 	public String gameboardInsertForm(HttpSession session) {
+
 		return "board/gameboard_insert_form";
 	}
 
