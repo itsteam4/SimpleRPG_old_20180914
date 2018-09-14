@@ -15,9 +15,9 @@
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script><script src="http://t1.daumcdn.net/postcode/api/core/180619/1529384927473/180619.js" type="text/javascript" charset="UTF-8"></script>
 <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 </head>
-<body onload="board_reply.n_content.focus()">
-	<form id="noticeboard_reply" name="noticeboard_reply" action="noticeboardreplyinsert" method="post" enctype="multipart/form-data">
-		<input type="hidden" name="n_ref" value="${board.n_ref}">
+<body onload="board_reply.b_content.focus()">
+	<form id="board_reply" name="board_reply" action="boardreplyinsert" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="b_ref" value="${board.b_ref}">
 		<div class="container" style="text-align: center">
 			<div style="margin-top: 30px">
 				<h1>댓글</h1>
@@ -29,7 +29,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-plus" style="font-size: 17px"> E-MAIL</i></span>
 					</div>
-					<input type="text" class="form-control" id="n_email" name="n_email" value="${sessionemail}" readonly>
+					<input type="text" class="form-control" id="b_email" name="b_email" value="${sessionemail}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -40,7 +40,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 이름</i></span>
 					</div>
-					<input type="text" id="n_name" name="n_name" class="form-control" value="${sessionname}" readonly>
+					<input type="text" id="b_name" name="b_name" class="form-control" value="${sessionname}" readonly>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -51,7 +51,7 @@
 						<span class="input-group-text" style="width: 150px"><i
 							class="fas fa-user-lock" style="font-size: 17px"> 제목</i></span>
 					</div>
-					<input type="text" id="n_title" name="n_title" class="form-control" value="${board.n_title}" required="true">
+					<input type="text" id="b_title" name="b_title" class="form-control" value="${board.b_title}" required="true">
 				</div>
 				<div class="col-md-3"></div>
 			</div>
@@ -69,7 +69,7 @@
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<textarea id="n_content" name="n_content" class="form-control" rows="10" style="resize: none" required="true"></textarea>
+					<textarea id="b_content" name="b_content" class="form-control" rows="10" style="resize: none" required="true"></textarea>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
