@@ -17,7 +17,6 @@
     <link href="resources/css/modern-business.css" rel="stylesheet">
 </head>
 <body>
-	<!-- 잠시 작성합니다. -->
 	    <!-- Navigation -->
         <page:applyDecorator name="layoutheader" />
     <div class="contatiner">

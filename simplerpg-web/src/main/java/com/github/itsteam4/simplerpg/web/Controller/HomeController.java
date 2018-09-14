@@ -1,6 +1,8 @@
 package com.github.itsteam4.simplerpg.web.Controller;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Locale;
 
 import org.apache.ibatis.session.SqlSession;
@@ -21,21 +23,22 @@ import com.github.itsteam4.simplerpg.web.service.TestDAO;
 public class HomeController {
 	@Autowired
 	SqlSession session;
-
+	
+	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
-
+		
 		TestDAO dao = session.getMapper(TestDAO.class);
 		ArrayList<String> name = dao.selectAll();
-
-		model.addAttribute("names", name);
+		
+		model.addAttribute("names",name);
 		return "home";
 	}
-
+	
 }
