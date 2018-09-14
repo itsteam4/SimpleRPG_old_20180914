@@ -12,14 +12,12 @@
  <decorator name="index" page="layout/layout.jsp">
  	<pattern>/</pattern>   
  </decorator>    
+ <decorator name="no" page=""></decorator>
  <!-- decorators를 적용시키지 않을 url 패턴 -->
  <excludes>
 <!--   <pattern>/memberList</pattern> -->    
   <pattern>/test</pattern>   
-
-                                             
 <!--   <pattern>/gallery</pattern> -->
-  
  </excludes>
 
 </decorators>
