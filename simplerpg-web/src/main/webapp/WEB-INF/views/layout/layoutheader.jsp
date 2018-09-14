@@ -16,41 +16,51 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-        <!-- ¼öÁ¤ ¿ä¸Á -->
+        <!-- ìˆ˜ì • ìš”ë§ -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"	aria-haspopup="true" aria-expanded="boardpagelist">¼Ò½Ä</a>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"	aria-haspopup="true" aria-expanded="boardpagelist">ì†Œì‹</a>
 						<div class="dropdown-menu dropdown-menu-right"
 							aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href=noticeboardpagelist>°øÁö»çÇ×</a> <a
-								class="dropdown-item" href="updateboardpagelist">¾÷µ¥ÀÌÆ® ³ëÆ®</a> <a
-								class="dropdown-item" href="eventboardpagelist">ÀÌº¥Æ®</a>
-
+							<a class="dropdown-item" href=noticeboardpagelist>ê³µì§€ì‚¬í•­</a> <a
+								class="dropdown-item" href="updateboardpagelist">ì—…ë°ì´íŠ¸ ë…¸íŠ¸</a> <a
+								class="dropdown-item" href="eventboardpagelist">ì´ë²¤íŠ¸</a>
 						</div></li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">°ÔÀÓ ¼Ò°³</a>
+              <a class="nav-link" href="about.html">ì†Œì‹</a>
             </li>
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                		ê°œìž„ì†Œê°œ
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="gameguideform">ê²Œìž„ë°°ê²½ ì†Œê°œ</a>
+                <a class="dropdown-item" href="itemguideform">ì•„ì´í…œ ì†Œê°œ</a>
+                <a class="dropdown-item" href="monsterguideform">ëª¬ìŠ¤í„° ì†Œê°œ</a>
+              </div>
+            </li>
+       
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">·©Å·</a>
+              <a class="nav-link" href="contact.html">ëž­í‚¹</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                	Ä¿¹Â´ÏÆ¼
+                	ì»¤ë®¤ë‹ˆí‹°
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">½ºÅ©¸°¼¦</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">µ¿¿µ»ó</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">ÀÚÀ¯°Ô½ÃÆÇ</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">ÆÁ/³ëÇÏ¿ì</a>
+                <a class="dropdown-item" href="portfolio-1-col.html">ìŠ¤í¬ë¦°ìƒ·</a>
+                <a class="dropdown-item" href="portfolio-2-col.html">ë™ì˜ìƒ</a>
+                <a class="dropdown-item" href="portfolio-3-col.html">ìžìœ ê²Œì‹œíŒ</a>
+                <a class="dropdown-item" href="portfolio-4-col.html">íŒ/ë…¸í•˜ìš°</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                		°í°´¼¾ÅÍ
+                		ê³ ê°ì„¼í„°
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">ÀÚÁÖ¹¯´ÂÁú¹®</a>
-                <a class="dropdown-item" href="blog-home-2.html">1:1¹®ÀÇ</a>
-                <a class="dropdown-item" href="blog-post.html">º¸¾È ¼¾ÅÍ</a>
+                <a class="dropdown-item" href="blog-home-1.html">ìžì£¼ë¬»ëŠ”ì§ˆë¬¸</a>
+                <a class="dropdown-item" href="helpdeskInsertForm">1:1ë¬¸ì˜</a>
+                <a class="dropdown-item" href="blog-post.html">ë³´ì•ˆ ì„¼í„°</a>
               </div>
             </li>
             <li class="nav-item dropdown">
